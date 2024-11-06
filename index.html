@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .top{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="todo-app">
-            <h2>To-Do List <img src="images/icon.png" ></h2>
+            <div class="top">
+                <h2>To-Do List <img src="images/icon.png" ></h2>
+                <div class="priority">
+                    <select name="" id="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+            </div>
+             
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your text">
                 <button onclick="addTask()">Add</button>
